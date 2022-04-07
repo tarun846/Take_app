@@ -56,7 +56,7 @@ Build shopping cart website to speed up order taking and  <br/> make less orderi
          </div>
          <div className = 'bini2' >
              <p>
-             Customer will fill out your order form. You will <br/> receive an order message via WhatsApp. You can <br/> talk to your customers directly in WhatsApp
+             {/* Customer will fill out your order form. You will <br/> receive an order message via WhatsApp. You can <br/> talk to your customers directly in WhatsApp */}
                
                 </p>
          </div>
