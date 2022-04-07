@@ -1,26 +1,25 @@
-import React from 'react'
-import { BrowserRouter as Router , Routes,Route } from 'react-router-dom'
-import Header from './Component/Header'
-import ProductList from './Component/ProductList'
-import ProductContainer from './Component/ProductContainer'
-
+import React from 'react';
+import Home from './Pages/Home';
+import { BrowserRouter as Router , Routes,Route } from 'react-router-dom';
+import './App.css'
+import Store from './Pages/Store';
 
 function App() {
     return (
         <div>
-            Jay Jagannath
-            <Router>
-            <Header/>
-            <Routes>
-            <Route path = '/'  element = {<ProductList/>}  />
-            <Route path = '/product/:productId'  element = {<ProductContainer/>}  />
-            <Route path = '*' > 404 nOT FOUND </Route>
+             <Router>
+
+             <Routes>
+            <Route path = '/' element = {<Home/>}  />
+            <Route path = '/store/:Id'  element = {<Store/>}/>
+
+            {/* <Route path = '*' > 404 NOT FOUND </Route> */}
             </Routes>
-          
-            </Router>
-        
+
+             </Router>
+            
         </div>
     )
-} 
+}
 
 export default App
